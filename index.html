@@ -35,7 +35,7 @@
                 <li>Limited to 1 book per day</li>
                 <li>No late fees on the same day</li>
             </ul>
-            <button>Subscribe Now</button>
+            <button id="button">Subscribe Now</button>
         </div>
 
         <div class="plan">
@@ -46,7 +46,7 @@
                 <li>Access to e-books and journals</li>
                 <li>Discounts on events</li>
             </ul>
-            <button>Subscribe Now</button>
+            <button class="button">Subscribe Now</button>
         </div>
 
         <div class="plan">
@@ -57,7 +57,7 @@
                 <li>Access to exclusive content</li>
                 <li>Priority support</li>
             </ul>
-            <button>Subscribe Now</button>
+            <button class="button">Subscribe Now</button>
         </div>
     </main>
 
@@ -67,7 +67,7 @@
 
     <script>
         // Example: Click event for buttons
-        document.querySelectorAll('button').forEach(button => {
+        document.getElementById('button').forEach(button => {
             button.addEventListener('click', () => {
                 alert('Redirecting to payment page...');
             });
@@ -97,9 +97,7 @@ body {
     
 }
 
-.header h1 {
-   
-}
+
 
 .membership-container {
     display: flex;
